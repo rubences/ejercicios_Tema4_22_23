@@ -7,7 +7,7 @@ def f(x):
 
 def biseccion(a,b,tol):
     if f(a)*f(b)>0:
-        print "No hay raíz en el intervalo"
+        print ("No hay raíz en el intervalo")
     else:
         while abs(b-a)>tol:
             c=(a+b)/2.0
@@ -16,6 +16,7 @@ def biseccion(a,b,tol):
             else:
                 a=c
         return c
+    
 
 print biseccion(0,1,0.0001)
 
@@ -29,7 +30,7 @@ def f(x):
 
 def falsa_posicion(a,b,tol):
     if f(a)*f(b)>0:
-        print "No hay raíz en el intervalo"
+        print ("No hay raíz en el intervalo")
     else:
         while abs(b-a)>tol:
             c=b-f(b)*(b-a)/(f(b)-f(a))
